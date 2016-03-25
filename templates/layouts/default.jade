@@ -34,7 +34,6 @@ html
 
 	//- HTML BODY
 	body
-
 		//- HEADER
 		#header: .container
 
@@ -65,13 +64,14 @@ html
 		//- BODY
 		#body
 
+
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
 			//- Remember to include it in your templates when you override the intro and content blocks!
 
 			//- The Intro block appears above flash messages (used for temporary information display)
 			block intro
-
+				div(style='background-image: url(/images/adamtrecording.jpg);')
 			//- Flash messages allow you to display once-off status messages to users, e.g. form
 			//- validation errors, success messages, etc.
 			+flash-messages(messages)
@@ -80,11 +80,13 @@ html
 			block content
 
 
+
 		//- FOOTER
 		.container: #footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			//- p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			p © 2016 Adam Taitano
 
 
 		//- JAVASCRIPT
